@@ -40,7 +40,7 @@ end
 group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-  
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -48,3 +48,9 @@ group :development do
   gem 'spring'
 end
 
+
+group :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "factory_girl_rails"
+  gem 'ffaker'
+end
