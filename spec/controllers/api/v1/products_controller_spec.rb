@@ -157,5 +157,4 @@ describe Api::V1::ProductsController do
     it { should respond_with 204 }
   end
 
-
 end
