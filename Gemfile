@@ -48,12 +48,14 @@ group :development do
   gem 'spring'
 end
 
-
 group :test do
   gem "rspec-rails", "~> 2.14"
+  gem "shoulda-matchers"
+end
+
+group :test, :development do
   gem "factory_girl_rails"
   gem "ffaker"
-  gem "shoulda-matchers"
 end
 
 gem "devise"
