@@ -13,11 +13,6 @@ describe Api::V1::UsersController do
       expect(user_response[:email]).to eql @user.email
     end
 
-    it "has the user as a embeded object" do
-      product_response = json_response[:product]
-      expect(product_response[:user][:email]).to eql @product.user.email
-    end
-
     it { should respond_with 200 }
   end
 
